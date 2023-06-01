@@ -3,8 +3,8 @@
 Ce repo est l'implémentation de [Analyse sémantique AMR pour le français par transfert translingue (Kang et al., 2023)](https://coria-taln-2023.sciencesconf.org/456133/document). 
 
 ## 1. Installation 
-Le code est testé en Python 3.9. Il est fortement recommendé d'utiliser conda pour gérer l'environment. 
-Pour installer les packages nécesssaires, exécutez la commande suivante:  
+Le code est testé en Python 3.9. Il est fortement recommandé d'utiliser conda pour gérer l'environment. 
+Pour installer les packages nécessaires, exécutez la commande suivante :  
 ```
 pip install -r requirements.txt 
 ```
@@ -35,7 +35,7 @@ Cela devrait créer `French_AMR_Parser/AMR` dans ce projet.
 
 - Prétraitement d'AMR   
   - Pour faire prétraitement (linéarisation) d'AMR, nous utilisons le script de [Van Noord](https://github.com/RikVN/AMR). Voir le repo originel pour plus de détails. 
-  - Après la linéarisation, les données doivent organisé comme suit: 
+  - Après la linéarisation, les données doivent structurées comme suit : 
   ```Add tree
     - data
         - AMR
@@ -60,15 +60,15 @@ Cela devrait créer `French_AMR_Parser/AMR` dans ce projet.
 
 -  Prétraitement du corpus parallèle
     - `./preprocess_parallel_corpus.sh`
-    - Ce processus va filtrer des paires de phrases parallèlels selon leur longeuer, ratio entre les caractères alignés. 
+    - Ce processus va filtrer des paires de phrases parallèles selon leur longueur, ratio entre les caractères alignés. 
 
 ## 4. Entraînement
   - `./run_training.sh` 
-  - Pour voir plus sur les paramètres, consultez le sript `scripts/train_amr_parser.py`
+  - Pour voir plus sur les paramètres, consultez le script `scripts/train_amr_parser.py`
 
 ## 5. Evaluation
   - `/.run_test.sh`
-  - Pour voir plus sur les paramètres, consultez le sript `scripts/run_test.py`
+  - Pour voir plus sur les paramètres, consultez le script `scripts/run_test.py`
 
 ## 6. Référence
 ```
