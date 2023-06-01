@@ -70,3 +70,7 @@ Cela devrait créer `French_AMR_Parser/AMR` dans ce projet.
   - `/.run_test.sh`
   - Pour voir plus sur les paramètres, consultez le sript `scripts/run_test.py`
 
+## 6. Référence
+```
+Kang J., Coavoux M., Lopez C., Scwhab D. (2023) Analyse sémantique AMR pour le français par transfert translingue : 30e Conférence sur le Traitement Automatique des Langues Naturelles (TALN 2023)
+```
