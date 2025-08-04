@@ -2,11 +2,11 @@
 
 # URL of the file to download
 
-en_de="https://opus.nlpl.eu/download.php?f=ParaCrawl/v5/moses/de-en.txt.zip"
-en_zh="http://opus.nlpl.eu/download.php?f=MultiUN/en-zh.txt.zip"
-en_es="http://opus.nlpl.eu/download.php?f=MultiUN/en-es.txt.zip"
-en_it="https://opus.nlpl.eu/download.php?f=Europarl/v3/moses/en-it.txt.zip"
-en_fr="https://opus.nlpl.eu/download.php?f=ParaCrawl/v5/moses/en-fr.txt.zip"
+en_de="https://object.pouta.csc.fi/OPUS-ParaCrawl/v5/moses/de-en.txt.zip"
+en_zh="https://object.pouta.csc.fi/OPUS-MultiUN/v1/moses/en-zh.txt.zip"
+en_es="https://object.pouta.csc.fi/OPUS-MultiUN/v1/moses/en-es.txt.zip"
+en_it="https://object.pouta.csc.fi/OPUS-Europarl/v3/moses/en-it.txt.zip"
+en_fr="https://object.pouta.csc.fi/OPUS-ParaCrawl/v5/moses/en-fr.txt.zip"
 
 urls=(${en_de} ${en_zh} ${en_es} ${en_it} ${en_fr})
 
