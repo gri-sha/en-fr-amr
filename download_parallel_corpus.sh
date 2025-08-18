@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# URL of the file to download
-
 en_de="https://object.pouta.csc.fi/OPUS-ParaCrawl/v5/moses/de-en.txt.zip"
 en_zh="https://object.pouta.csc.fi/OPUS-MultiUN/v1/moses/en-zh.txt.zip"
 en_es="https://object.pouta.csc.fi/OPUS-MultiUN/v1/moses/en-es.txt.zip"
@@ -13,12 +11,11 @@ urls=(${en_de} ${en_zh} ${en_es} ${en_it} ${en_fr})
 
 # Get the absolute path of the directory containing the script
 dir="$(cd "$(dirname "$0")" && pwd)"
-
 # Destination parent directory for the downloaded file
 data_dir="${dir}/data/Parallel_Corpus"
+mkdir -p "$data_dir"
 
 # Use curl to download the file and save it to the download_destination directory
-
 for url in "${urls[@]}"; do
     # Extract the variable name from the URL
     filename=$(basename "${url}")

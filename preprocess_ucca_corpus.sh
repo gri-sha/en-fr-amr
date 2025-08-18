@@ -7,4 +7,4 @@ scripts_dir="${current_dir}/scripts"
 cd "${scripts_dir}" || exit
 echo "Go to the directory: ${PWD}"
 
-python preprocess_ucca.py --mrp_dir "${current_dir}/data/UCCA/mrp/2019/training/ucca" --xml_dir "${current_dir}/data/UCCA/UCCA_English-LPP-main/xml"
+python3 preprocess_ucca.py --mrp_dir "${current_dir}/data/UCCA/mrp/2019/training/ucca" --xml_dir "${current_dir}/data/UCCA/UCCA_English-LPP-main/xml"
