@@ -7,6 +7,6 @@ train_dir="${dataset_dir}/data/amrs/split/training"
 
 python3 "${dir}/scripts/preprocess_amr.py" --input-folder "${dev_dir}" --output-folder "${data_dir}/dev/en"
 python3 "${dir}/scripts/preprocess_amr.py" --input-folder "${test_dir}" --output-folder "${data_dir}/test/en"
-python3 "${dir}/scripts/preprocess_amr.py" --input-folder "${train_dir}" --output-folder "${data_dir}/training/en"
+python3 "${dir}/scripts/preprocess_amr.py" --input-folder "${train_dir}" --output-folder "${data_dir}/train/en"
 
-rm "${dataset_dir}"
+rm -rf "${dataset_dir}"

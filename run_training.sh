@@ -7,6 +7,8 @@ scripts_dir="${current_dir}/scripts"
 # add AMR directory to PYTHONPATH
 export PYTHONPATH="${PYTHONPATH}:${current_dir}/AMR"
 
+source .venv/bin/activate
+
 cd "${scripts_dir}" || exit
 echo "Go to the directory: ${PWD}"
 python train_amr_parser.py 
